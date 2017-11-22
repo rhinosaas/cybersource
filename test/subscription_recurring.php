@@ -21,7 +21,7 @@
 	$c->recurring( array(
 		'frequency'        => 'monthly',
 		'amount'           => '99.00',
-		'currency'         => 'THB',
+		'currency'         => 'USD',
 		'startDate'        => $tomorrow->format('Ymd'),
 	));
 

@@ -18,14 +18,12 @@
 
 	$c->reference_code('B' . time() );
 	$c->reconcile_code('R' . time() );
-	
-	// $c->authorize('5.55'); // USD
-	$c->authorize('5.55', 'THB');
 
-	echo '<pre>';
-	print_r( $c->request );
-	print_r( $c->response );
-	echo '</pre>';
+	// $c->authorize('5.55'); // USD
+	$c->authorize('5.55', 'USD');
+
+	printHeader('Authorize <small>Amount</small>');
+	printRequestResponse($c->request,$c->response);
 
 	$reference_code = $c->response->merchantReferenceCode;
 	$amount         = $c->response->ccAuthReply->amount;

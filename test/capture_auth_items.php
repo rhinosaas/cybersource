@@ -31,10 +31,8 @@
 	catch ( CyberSource_Declined_Exception $e ) {
 		echo 'Transaction declined';
 	}
-	
-	echo '<pre>';
-	print_r( $c->request );
-	print_r( $c->response );
-	echo '</pre>';
+
+	printHeader('Capture Authorization <small>Items</small>');
+	printRequestResponse($c->request,$c->response);
 
 // EOL

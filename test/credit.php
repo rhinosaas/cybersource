@@ -4,7 +4,7 @@
 
 	$request_id = '5053113424856675003008 ';
 	$amount     = '5.55';
-	$currency   = 'THB';
+	$currency   = 'USD';
 	$reference_code = 'C' . time();
 
 	try {

@@ -18,11 +18,9 @@
 	
 	$c->reference_code( time() );
 	$c->reconcile_code('R' . time() );
-	$c->charge(null, 'THB');
-	
-	echo '<pre>';
-	print_r( $c->request );
-	print_r( $c->response );
-	echo '</pre>';
+	$c->charge(null, 'USD');
+
+	printHeader('Charge <small>Authorize and Capture</small>');
+	printRequestResponse($c->request,$c->response);
 
 // EOL

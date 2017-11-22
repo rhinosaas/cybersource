@@ -44,12 +44,12 @@
   ------------------------------------------------------
 </pre>
 		    <ul>
-				<li><a href="auth_amount.php">auth_amount</a></li>
-				<li><a href="auth_items.php">auth_items</a></li>
-				<li><a href="capture_auth_amount.php">capture_auth_amount</a></li>
-				<li><a href="capture_auth_items.php">capture_auth_items</a></li>
-				<li><a href="capture_auth_request_id.php">capture_auth_request_id</a></li>
-				<li><a href="charge.php">charge</a></li>
+				<li><a class="bg-success" href="auth_amount.php">auth_amount</a></li>
+				<li><a class="bg-success" href="auth_items.php">auth_items</a></li>
+				<li><a class="bg-success" href="capture_auth_amount.php">capture_auth_amount</a></li>
+				<li><a class="bg-success" href="capture_auth_items.php">capture_auth_items</a></li>
+				<li><a class="bg-warning" href="capture_auth_request_id.php">capture_auth_request_id</a></li>
+				<li><a class="bg-success" href="charge.php">charge</a></li>
 				<li><a href="void.php">void</a></li>
 				<li><a href="credit.php">credit</a></li>
 				<li><a href="reverse_auth_amount.php">reverse_auth_amount</a></li>

@@ -20,7 +20,7 @@
 	$c->device_fingerprint_id($_GET['df_id']);
 	
 	// $c->authorize('5.55'); // USD
-	$c->authorize('1572.0', 'THB');
+	$c->authorize('1572.0', 'USD');
 
 	$reference_code = $c->response->merchantReferenceCode;
 	$amount         = $c->response->ccAuthReply->amount;

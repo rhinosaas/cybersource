@@ -6,7 +6,7 @@
 
 		$c->reference_code( time() );
 		$c->reconcile_code('R' . time() );
-		$c->charge_subscription('5053355694176713403008', '75', 'THB');
+		$c->charge_subscription('5053355694176713403008', '75', 'USD');
 		
 	}
 	catch ( Exception $e ) {

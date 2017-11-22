@@ -4,7 +4,7 @@
 	
 	try {
 		$c->reference_code( time() );
-		$c->credit_subscription('5053355694176713403008', '75', 'THB');
+		$c->credit_subscription('5053355694176713403008', '75', 'USD');
 	}
 	catch ( Exception $e ) {
 		echo $e->getCode() . ': ' . $e->getMessage() . '<br />';

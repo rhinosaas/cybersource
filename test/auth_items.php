@@ -20,12 +20,10 @@
 		->add_item( 1.25 );
 
 	$c->reference_code('BAY' . time() );
-	$c->authorize(null, 'THB');
-	
-	
-	echo '<pre>';
-	print_r( $c->request );
-	print_r( $c->response );
-	echo '</pre>';
+	$c->authorize(null, 'USD');
+
+
+	printHeader('Authorize <small>Items</small>');
+	printRequestResponse($c->request,$c->response);
 
 // EOF

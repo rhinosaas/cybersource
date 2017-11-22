@@ -16,22 +16,20 @@
 		) );
 	
 	$c->reference_code( time() );
-	$auth_response = $c->authorize('5.55', 'THB');
+	$auth_response = $c->authorize('5.55', 'USD');
 	
 	if ( !isset( $auth_response->requestToken ) ) {
 		die('Authorization seems to have failed!');
 	}
 	
 	try {
-		$c->capture($auth_response->requestToken, '5', 'THB');
+		$c->capture($auth_response->requestToken, '5', 'USD');
 	}
 	catch ( CyberSource_Declined_Exception $e ) {
 		echo 'Transaction declined';
 	}
-	
-	echo '<pre>';
-	print_r( $c->request );
-	print_r( $c->response );
-	echo '</pre>';
+
+	printHeader('Capture Authorization <small>Amount</small>');
+	printRequestResponse($c->request,$c->response);
 
 // EOL
